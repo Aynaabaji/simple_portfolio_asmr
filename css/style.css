@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+:root{
+    --primary:#2C2C2C;
+    --accent:#FF6308;
+    --white:#fff;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.fcc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_accent{
+    background-color: var(--accent) !important;
+}
+
+
+.buton{
+    padding: 0.5rem 4rem;
+    border: none;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+
+
+
+
+.btn_primary{
+    background-color: var(--accent) !important;
+    color: var(--white) !important;
+    border: 2px solid var(--accent) !important;
+}
+
+.btn_secondary{
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border: 2px solid var(--primary) !important;
+}
+
+
+.btn_secondary:hover{
+    background: transparent !important;
+    border: 2px solid var(--white) !important;
+    color: var(--white) !important;
+}
+
+.btn_primary:hover{
+    background-color: transparent !important;
+    border: 2px solid var(--white) !important;
+    color: var(--white) !important;
+}
+
+
+
+.common_heading{
+    padding: 5rem 0;
+    color: var(--white) !important;
+    text-align: center;
+}
+
+.common_heading h2{
+    font-size: 5rem !important;
+    text-transform: uppercase;
+}
+
+.common_heading p{
+    font-size: 2rem !important;
+    width: 75% !important;
+}
+
+.border_radius_5{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.two_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+}
+
+.gap_5{
+    gap:5rem !important;
+}
+
+.gap_1{
+    gap: 1rem !important;
+}
+
+
+.three_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+
+.small_div{
+    width: 100% !important;
+    padding-top: 1.5rem !important;
+}
+
+.small_div h3{
+    text-transform: uppercase;
+
+}
+
+
+
+/* nav css */
+nav{
+    background-color: var(--primary) !important;
+}
+
+
+nav a{
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-size: 20px !important;
+}
+
+
+nav .search svg{
+    /* fill: var(--white) !important; */
+    color: var(--white) !important;
+    font-size: 25px;
+}
+
+
+
+.navbar-nav{
+    gap: 1.5rem !important;
+}
+/* nav css */
+
+
+
+/* banner section */
+#banner{
+    background: url('/images/banner-now.png') no-repeat center;
+    background-size: cover;
+    padding:25% 0 7% 0;
+}
+
+
+.banner_content{
+    width: 40% !important;
+}
+
+
+.banner_content>h1{
+    font-size: 6rem !important;
+
+}
+
+.banner_content>p{
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin: 2rem 0;
+    font-weight: 300 !important;
+}
+
+.banner_content>button{
+    font-size: 2rem;
+}
+
+
+/* banner section */
+
+
+
+/* dance tour section */
+#dance_tour{
+    background:url('/images/dance_tour_background.png') no-repeat center;
+    background-size: cover;
+    padding: 2rem 0 2rem 0;
+}
+
+.dtc_card{
+    background: var(--primary);
+    margin-bottom: 4rem;
+}
+
+
+.dtc_card>img{
+    width: 100% !important;
+}
+
+
+/* dance tour section */
+
+
+/* pricing section */
+#pricing{
+    background: url('/images/pricing_background.png') no-repeat center;
+    background-size: cover;
+    padding: 2rem 0 5rem 0; 
+}
+
+
+.badge_icon{
+    padding: 4rem 0 2rem 0 ;
+}
+
+
+.badge_icon svg{
+    font-size: 8rem !important;
+}
+
+.pc_cnt{
+    padding-bottom: 3rem;
+}
+
+
+.pc_cnt button{
+    font-size: 2rem !important;
+}
+/* pricing section */
+
+
+
+/* amazing section */
+#amazing{
+    background: url('/images/amazing_dance_background.png') no-repeat center ;
+    background-size: cover;
+}
+
+
+.amz_cont{
+    padding: 0 4rem;
+}
+
+.amz_cont .common_heading{
+    text-align: left !important;
+}
+
+
+.amz_cont .common_heading p{
+    width: 100% !important;
+    text-align: left;
+}
+
+.amz_cont button{
+    font-size: 2rem;
+}
+/* amazing section */
+
+
+/* best section */
+#best{
+    background: url('/images/best_dance_background.png') no-repeat center;
+    background-size: cover;
+}
+/* best section */
+
+/* stat section */
+#stat{
+    background:var(--primary);
+    padding-bottom: 4rem;
+}
+
+.st_cnt h3{
+    font-size: 4.5rem;
+}
+
+.st_cnt p{
+    font-size: 2rem;
+}
+/* stat section */
+
+
+/* hero section */
+#hero{
+    background:url('/images/herbert_simon.png') no-repeat center;
+    background-size: cover;
+    padding: 18rem 0;
+}
+/* hero section */
+
+
+/* subscribe section */
+#subscribe{
+    background: url('/images/subscribe_background.png') no-repeat center;
+    background-size: cover;
+}
+
+#subscrie form{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 0;
+}
+
+.inp{
+    width: 400px;
+    padding: 0.6rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* subscribe section */
+
+
+/* footer section */
+footer{
+    background: var(--primary);
+    padding: 10rem 0;
+}
+
+
+.fc{
+    display: flex;
+}
+
+
+.tg1 p{
+    width: 60% !important;
+    padding: 2rem 0;
+}
+
+.ti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    padding: 0.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer .ti svg{
+    font-size: 2rem
+}
+
+footer .ti svg path{
+    color: var(--primary) !important;
+}
+/* footer section */
